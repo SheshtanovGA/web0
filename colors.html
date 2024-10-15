@@ -1,0 +1,48 @@
+<!--
+  Вариант 7.
+  Создайте форму, позволяющую выбирать несколько 
+  из данных значений в поле цвет: красный, зеленый, синий и пр.
+  Цвет текста каждого пункта сделайте соответствующего цвета.
+  Используйте теги <label> и <input>.
+-->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Выбор цвета</title>
+  <style>
+    .red {
+      color: red
+    }
+
+    .green {
+      color: green
+    }
+
+    .blue {
+      color: blue
+    }
+
+    .black {
+      color: black
+    }
+  </style>
+</head>
+
+
+<body>
+  <form action="/action.py" method="get">
+    <label for="color">Выберите цвет</label>
+    <input list="colors" name="color" id="color"><br>
+    <select name="colors" id="colors">
+      <option value="red" class="red">red</option>
+      <option value="green" class="green">green</option>
+      <option value="blue" class="blue">blue</option>
+      <option value="black" class="black">black</option>
+    </select>
+  </form>
+</body>
+
+</html>
